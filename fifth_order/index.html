@@ -1,0 +1,78 @@
+---
+layout: default
+title: lcs-fast cfd solver               
+---
+
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+		
+		<!-- Main -->
+			<article id="main">
+
+				<header class="special container">
+<!--					<span class="icon fa-mobile"></span> -->
+					<a href="#" class="image"><img src="/images/LCS-logos/LCS-FAST-CMYK-transparent.png" alt="London Computational Solutions" style="max-width:20%" /></a>
+					<h2> Spectral methods </h2>
+					<p>LCS delivers 5th order whole car simulation </p>
+
+
+				</header>
+					
+				<!-- One -->
+					<section class="wrapper style4 container">
+					
+						<!-- Content -->
+							<div class="content">
+								<section>
+
+            <a href="#" class="image featured"><img src="/images/Elemental-pics/highorder_2.jpg" alt="high order 2"/></a>
+									<header>
+										<h3>Exploiting high order techniques</h3>
+									</header>
+
+<p>	
+LCS-FAST working closely with the <a href="http://www.nektar.info/" target="_blank"> Nektar++ team</a>  in the Dept of Aeronautics at Imperial College has performed  5th order accurate simulations using the high order spectral method solver <a href="http://www.nektar.info/" target="_blank"> Nektar++</a> for the Elemental RP1. The motivation for running high order sumulations is described <a href="/high_order"> here</a>. 
+This, we believe, is the first such calculation on an automotive whole car geometry and certainly one of the most complex geometries that this method has ever been attempted on. This work was motivated by two goals, the first to provide detailed insight into the aerodynamics of the Elemental Rp1 to inform a major upgrade in its aerodynamic configuration (see <a href="/rp1upgrade"> here</a> for more details), and the second to understand the capabilities of the code on such a complex engineering case to provide direction to the ongoing high order methods research programme in the <a href="http://www.nektar.info/" target="_blank"> Nektar++ group.</a>
+</p> 
+            <a href="#" class="image featured"><img src="/images/Elemental-pics/mesh_slide.png" alt="front high order mesh"/></a>
+									<header>
+										<h3>High order mesh</h3>
+									</header>
+<p>
+The first step, of course, is to produce a mesh for the simulation. Being a high order simulation we want high order curved elements, a schematic of which is shown above. On the left we can see the expansion from a curved boundary layer cell, and on the right the quadrature map on the surface mesh reflecting the resolution we are actually achieving.
+</p>
+            <a href="#" class="image featured"><img src="/images/Elemental-pics/visit0107.png" alt="front high order mesh"/></a>
+<p>
+Here we show the front of the car and illustrate how the curvature of the car surfaces are accurately captured by the curved surface mesh elements. These are then extruded for 6 cells to create a high resolution prism mesh for the boundary layer before merging into the high order tetrahedral core, where the elements can be (and are) linear for computational efficiency.
+</p>
+            <a href="#" class="image featured"><img src="/images/Elemental-pics/visit0110.png" alt="rear high order mesh"/></a>
+<p>
+Looking carefully at the rear of the car you can clearly see the effectiveness of the curved elements in capturing the round tail lights and more significantly the curvatures at the corners of the rear diffuser. There would be little point in performing a high order simulation for the ultimate in accuracy if we didn't capture the geometry to that same accuracy. Note that by using this approach we are able to resolve the geometry and off-body flow with just ~2.5 million cells (tetrahedra and prisms), but using the spectral methods with 5th order polynomials we are achieving 1 billion degrees of freedom, which is indeed necessary to realise the flow features to the desired accuracy.
+</p>
+            <a href="#" class="image featured"><img src="/images/Elemental-pics/highorder_3.png" alt="high order floor"/></a>
+
+									<header>
+										<h3>Boundary layer physics</h3>
+									</header>
+<p>
+Above we show contours of total head coloured by pressure coefficient on the floor of the Rp1. These were studied in great detail at a number of different Reynolds numbers (or speeds) to understand how the boundary layers on the splitter and front and rear diffusers were behaving. This information was then used to evaluate the potential of these geometrical features to deliver more aerodynamic performance, which lead to a major new project to realise the full aerodynamic potential of the unique mechanical layout of the Rp1. Details of this dramatic resultant increase in performance of the Rp1 can be found <a href="/rp1upgrade"> here.</a>
+</p>
+				<section id="cta">
+				<header>
+					<h2> <strong> Learn more about LCS-FAST technology </strong> </h2>
+				</header>
+				<footer class="major">
+                                        <ul class="buttons">
+                                                <li><a href="/high_order" class="button special"> high-order CFD</a></li>
+                                                <li><a href="/elemental" class="button special">more downforce for rp1</a></li>
+                                        </ul>
+                                </footer>
+				</section>
+
+								</section>
+							</div>
+					</section>
+

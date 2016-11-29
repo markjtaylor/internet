@@ -1,0 +1,17 @@
+# Site settings
+title: London Computational Solutions
+owner: London Computational Solutions Ltd.
+email: mark@lcs-fast.com     
+description: |
+  Bespoke high performance simulation and design tools
+baseurl: "" # the subpath of your site, e.g. /blog
+first_published: 2016 # if migrating another site, the year of your first publish
+url: "http://www.lcs-fast.com" # the base hostname & protocol for your site
+twitter_username: lcs_fast
+github_username:  markjtaylor
+
+google_analytics: UA-75494655-1
+
+# Build settings
+markdown: kramdown
+

@@ -1,0 +1,20 @@
+<!-- Footer -->
+<footer id="footer">
+
+    <ul class="icons">
+        <li><a href="https://twitter.com/lcs_fast" target="_blank" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+    </ul>
+
+    <ul class="copyright">
+        <li>&copy; {% assign thisyear = site.time | date: "%Y" %}
+                   {% if site.first_published %}
+                   {% capture diff %}{{ site.first_published | minus:thisyear }}{% endcapture %}
+                   {% if diff contains '-' %}{{ site.first_published }},{% endif %}
+                   {% endif %}
+                   {{ thisyear }}  London Computational Solutions Ltd.</li>
+        <li><a href="/terms_conditions/">T&Cs and Privacy</a></li>
+        <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+        <li> Built with: <a href="http://jekyllrb.com" target="_blank">Jekyll</a></li>
+    </ul>
+
+</footer>

@@ -1,0 +1,84 @@
+---
+layout: default
+title: adaptive mesh                     
+---
+
+<!-- Main -->
+<article id="main">
+
+	<header class="special container">
+		<a href="#" class="image"><img src="/images/LCS-logos/LCS-FAST-CMYK-transparent.png" alt="London Computational Solutions" style="max-width:30%" /></a>
+		<h2> adaptive mesh  </h2>
+		<p>efficient mesh deployment, put the resolution only where it is needed </p>
+	</header>
+
+	<section class="wrapper style4 container">
+
+		<!-- Content -->
+		<div class="content">
+		<section>
+            <a href="#" class="image featured"><img src="/images/adaptive-pics/lock1.png" alt="Adapting mesh to the flowfield"/></a>
+			<header>
+				<h3>Adapting mesh to the flowfield</h3>
+			</header>
+
+            <p>	One of the big challenges of transient CFD is the amount of
+            elapsed time and computer hardware resource required to achieve a
+            time accurate result. Another frustration is when you have
+            completed your simulation you discover that your mesh resolution
+            was inadequate and you have to do it all again.  Our directors <a
+                href="/the_team" target="_blank">Matthew Piggot</a>
+            and <a href="/the_team" target="_blank">Gerard Gorman</a>
+            are world experts in the deployment of adaptive mesh in complex
+            flow regimes including aerodynamics, multi-phase flow,
+            turbomachinery in the presence of eroding particles and geophysics.
+            In the example shown in the picture above we show a lock about to
+            open with the liquid in blue on the left (this is a multi-phase
+            flow). In the initial set up both liquid and air (in yellow) are at
+            rest so we only need a very coarse mesh for the main body of the
+            flow but a refinement in the interface.  </p> <a href="#"
+                class="image featured"><img
+                src="/images/adaptive-pics/lock2.png" alt="#"/></a> <p>Now we
+            release the lock gate and see the mesh refinement immediately
+            respond to changes in the interface plane resolving the complex
+            vortical structures in great detail with no user input. A a-priori
+            unadapted mesh strategy would have been a major challenge to create
+            (as well as being very large and expensive) to guarantee capturing
+            all of these fine details correctly which is essential for
+            accurately predicting the evolution of this flow in time.  </p> <a
+                href="#" class="image featured"><img
+                src="/images/adaptive-pics/lock3.png" alt="#"/></a> <p> In this
+            picture we can see how the mesh size has dramatically increased
+            from the initial condition (our first image above) in order to be
+            able to accurately capture the full complex interface as the liquid
+            approaches the far wall of the tank. </p>
+
+            <a href="#" class="image featured"><img src="/images/adaptive-pics/lock4.png" alt="#"/></a>
+
+			<header>
+				<h3>And coarsen again for computational efficiency</h3>
+			</header>
+
+            <p> Look carefully at the air (yellow) region on the left hand side
+            and compare with the same region in the previous picture. Note how
+            this region of air has significantly coarsened as the liquid
+            migrates to the right hand side which save computational effort, as
+            the computational expense is proportional to the number of mesh
+            cells. We will be bringing this technology to our LCS-FAST solver
+            in both single and multi-phase flow applications.</p>
+
+		</section>
+		<section id="cta">
+			<header>
+				<h2> <strong> Learn more about the LCS-FAST philosophy </strong> </h2>
+			</header>
+		    <footer class="major">
+                <ul class="buttons">
+                    <li><a href="/vision" class="button special">The LCS_FAST vision</a></li>
+                   <li><a href="/high_order" class="button special">High-order CFD</a></li>
+                </ul>
+            </footer>
+		</section>
+	    </div>
+	</section>
+</article>
